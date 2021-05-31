@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak Uvid d.o.o.</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="algoritam.js"></script>
+    <script src="validator.js"></script>
+    
+</head>
+<body>
+  
+    <nav>
+        <img class="logo" src="logo-white.png">
+
+    </nav>
+
+  
+    
+ <div class="container">   
+
+    <div class="block">
+        <h1>Dobrodošli na stranicu !</h1>
+        <div class="line"></div>
+
+        
+
+        <!--<p> *Ova stranica napravljena je za svrhu rješavanja zadatka u 2. selekcijskom krugu za tvrtku Uvid d.o.o. </p>-->
+        <h2>Algoritam - zadatak</h2>
+        <p>Napraviti algoritam koja za proizvoljno unesen niz elemenata, vraća indeks elementa koji niz dijeli na dva podniza sa jednakom sumom.</p>
+        <h2>Upute za korištenje</h2>
+        <p>U prazno polje unesite željeni niz elemenata(brojeva) za koji želite saznati na kojem se indexu niz može podijeliti u dva podniza
+            sa istom sumom. U polje je mogući unos brojeva 0-9 te razmaka. Ukoliko se pokuša upisati neka druga vrijednost (npr. slovo, zagrada)
+            unos neće biti dozvoljen te će se prikazati upozorenje za pogrešan unos. Kada unesete željeni niz pritisnite na "Dohvati" kako bi se 
+            pokrenuo algoritam. Ukoliko se uneseni niz može podijeliti na dva podniza istih suma, pojaviti će se element ispod "Dohvati" sa 
+            indexom elementa koji dijeli dva podniza. U suprotnom (ako se niz ne može podijeliti) pojaviti će se isti element ali s porukom
+            "Niz se ne može podijeliti."
+
+        </p>
+        
+        
+
+        
+
+    <form onsubmit="event.preventDefault();">
+        <p>Unesi niz u polje:</p>
+
+        <input type="text" id="numbers" onkeypress="return doValidate(event);" ondrop="return false;" onpaste="return false;" />
+        <span id="error" > Pogreška! Dozvoljen razmak i brojevi 0-9</span> 
+        <input type="submit" id="button" onclick="myAlgoritam();" value="Dohvati"/>
+
+        
+         <p id="resolve"></p>
+      
+    </form>
+
+    
+
+    
+    
+  
+    </div>
+ </div>
+<footer>
+    <div class="info">
+        <p>Uvid d.o.o <br> info@uvid.hr <br>
+            <br> Sjedište<br> Savska 34, 10 310 Ivanić Grad <br><br> Adresa poslovnice<br> Hrelićka 96, 10 000 Zagreb 
+            
+        </p>
+       
+
+
+    </div>
+
+    <div class="info">
+        <p>Informacije o kandidatu: </p> 
+        <p>Patricia Zajec <br>zajecpatricia@gmail.com <br>Ferdinanda Budickog 10, Zagreb
+        </p>
+    </div>
+
+    
+
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
